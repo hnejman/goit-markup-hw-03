@@ -5,12 +5,37 @@
     --secoundary-color:  #757575;
 }
 
-a{
+h1,
+h2,
+h3,
+h4,
+h5{
+    margin: 0;
+}
+
+ul,
+ol{
+    margin: 0;
+    padding: 0;
+}
+
+img{
+    display: block;
+}
+
+.link{
     text-decoration: none;
 }
 
-li{
+.list{
     list-style-type: none;
+}
+
+.container{
+    width: 1200px;
+    padding: 0 15px;
+    align-items: center;
+    margin: 0 auto;
 }
 
 body{
@@ -22,6 +47,29 @@ body{
 
 /* =======HEADER====== */
 
+.header{
+    border-bottom: 1px solid #ECECEC;
+}
+
+.header .container{
+    display: flex;
+    align-items: center;
+    padding: 25px 0;
+}
+
+.navigation{
+    display: flex;
+}
+
+.navigation-list{
+    display: flex;
+    align-items: center;
+}
+
+.navigation-list-item:not(:last-child){
+    margin-right: 46px;
+}
+
 .navigation-logo{
     font-family: var(--secoundary-font);
     font-weight: 700;
@@ -30,6 +78,7 @@ body{
     letter-spacing: 0.03em;
     color: #000000;
     cursor: pointer;
+    margin-right: 76px;
 }
 
 .navigation-logo span{
@@ -48,7 +97,16 @@ body{
     color: var(--main-color);
 }
 
-.contact{
+.contact-list{
+    display: flex;
+    margin-left: auto;
+}
+
+.contact-list-item:not(:last-child){
+    margin-right: 50px;
+}
+
+.contact-list{
     font-style: normal;
     font-family: var(--main-font);
     font-weight: 500;
@@ -107,7 +165,7 @@ h1{
     border: none;
 }
 
-.team li{
+.team-container li{
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
