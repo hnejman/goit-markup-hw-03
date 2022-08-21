@@ -1,0 +1,180 @@
+:root{
+    --main-font: font-family: 'Roboto', sans-serif;
+    --secoundary-font: font-family: 'Raleway', sans-serif;
+    --main-color: #2196F3; 
+    --secoundary-color:  #757575;
+}
+
+a{
+    text-decoration: none;
+}
+
+li{
+    list-style-type: none;
+}
+
+body{
+    font-family: var(--main-font,--secoundary-font);
+    color: #212121;
+    padding: 0;
+    margin: 0;
+}
+
+/* =======HEADER====== */
+
+.navigation-logo{
+    font-family: var(--secoundary-font);
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1,192;
+    letter-spacing: 0.03em;
+    color: #000000;
+    cursor: pointer;
+}
+
+.navigation-logo span{
+    color: var(--main-color);
+}
+
+.navigation-list-link{
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,172;
+    letter-spacing: 0.02em;
+    cursor: pointer;
+}
+.navigation-list-link:hover,
+.navigation-list-link:focus{
+    color: var(--main-color);
+}
+
+.contact{
+    font-style: normal;
+    font-family: var(--main-font);
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1,423;
+    letter-spacing: 0.02em;
+    color: var(--secoundary-color);
+}
+
+.contact-link{
+color: var(--secoundary-color);
+cursor: pointer;
+}
+.contact-link:hover,
+.contact-link:focus{
+    color: var(-main-color);
+}
+
+/* ===END=HEADER====== */
+
+/* =======MAIN====== */
+
+h1{
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    background-color: #2F303A;
+    color: #ffffff;
+}
+
+.par-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+}
+
+.par{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(-secoundary-color);
+}
+
+.modal-btn{
+    cursor: pointer;
+    background-color: var(--main-color);
+    color: #fff;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    border: none;
+}
+
+.team li{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+.team-name{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 19px;
+    color: #212121;
+}
+
+h2{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.667;
+    text-align: center;
+    letter-spacing: 0.03em;
+}
+
+.port-btn{
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: #212121;
+    cursor: pointer;
+}
+.port-btn:hover,
+.port-btn:focus{
+    color: #FFFFFF;
+    background-color: var(-main-color);
+}
+
+
+.port-card-label{
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #212121;
+}
+
+.port-card-sublabel{
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.03em;
+    color: #757575;
+}
+
+/* ===END=MAIN====== */
+
+/* =======FOOTER==== */
+footer{
+    background-color: #2F303A;
+}
+
+ footer .navigation-logo {
+    color: #ffffff;
+ }
+ 
+ footer > .address{
+    color: rgba(255, 255, 255, 0.6);
+ }
+
+/* ===END=FOOTER==== */
