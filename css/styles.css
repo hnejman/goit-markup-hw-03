@@ -19,6 +19,10 @@ ol{
     padding: 0;
 }
 
+p{
+    margin: 0;
+}
+
 img{
     display: block;
 }
@@ -46,6 +50,10 @@ body{
 }
 
 /* =======HEADER====== */
+
+.section{
+    padding: 94px 0;
+}
 
 .header{
     border-bottom: 1px solid #ECECEC;
@@ -129,6 +137,15 @@ cursor: pointer;
 
 /* =======MAIN====== */
 
+.title .container{
+    text-align: center;
+}
+
+.title{
+    background-color: #2F303A;
+    padding: 200px 0;
+}
+
 h1{
     font-weight: 900;
     font-size: 44px;
@@ -136,24 +153,8 @@ h1{
     text-align: center;
     letter-spacing: 0.06em;
     text-transform: uppercase;
-    background-color: #2F303A;
     color: #ffffff;
-}
-
-.par-title{
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.143;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-}
-
-.par{
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.71;
-    letter-spacing: 0.03em;
-    color: var(-secoundary-color);
+    margin-bottom: 30px;
 }
 
 .modal-btn{
@@ -163,14 +164,72 @@ h1{
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     border: none;
+    padding: 10px 41px;
+    margin-left: auto;
 }
 
-.team-container li{
+.paragraphs .list{
+    display: flex;
+}
+
+.par-title{
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.143;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+    text-align: left;
+}
+
+.par{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+    color: var(-secoundary-color);
+    padding-top: 94px;
+}
+
+.par:not(:last-child){
+    margin-right: 30px;
+}
+
+.activities-list{
+    display:flex;
+    justify-content: center;
+}
+
+.acivities-list-item:not(:last-child){
+    margin-right: 30px;
+}
+
+.team{
+    background: #F5F4FA;
+}
+
+.team-list{
+    display: flex;
+    justify-content: center;
+}
+
+.team-list-item{
+    background: #fff;
+    border-radius: 0 0 4px 4px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12),
+                0px 1px 1px rgba(0, 0, 0, 0.14),
+                0px 2px 1px rgba(0, 0, 0, 0.2);
+    color: #757575;
     font-weight: 400;
     font-size: 16px;
     line-height: 19px;
     letter-spacing: 0.03em;
-    color: #757575;
+    padding-bottom: 30px;
+    text-align: center;
+}
+
+.team-list-item:not(:last-child){
+    margin-right: 30px;
 }
 
 .team-name{
@@ -178,6 +237,8 @@ h1{
     font-size: 16px;
     line-height: 19px;
     color: #212121;
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 h2{
@@ -186,23 +247,60 @@ h2{
     line-height: 1.667;
     text-align: center;
     letter-spacing: 0.03em;
+    margin-bottom: 50px;
 }
 
-.port-btn{
+.portfolio{
+    padding: 94px 0;
+}
+
+.filter-list{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 50px;
+}
+
+.filter-list-item:not(:last-child){
+    margin-right: 8px;
+}
+
+.filter-btn{
+    border: none;
+    border-radius: 4px;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 
+                0px 1px 2px rgba(0, 0, 0, 0.08), 
+                0px 2px 2px rgba(0, 0, 0, 0.12);
+    color: #212121;
+    cursor: pointer;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.62;
-    text-align: center;
     letter-spacing: 0.03em;
-    color: #212121;
-    cursor: pointer;
+    padding: 6px 22px;
+    text-align: center;
 }
-.port-btn:hover,
-.port-btn:focus{
+.filter-btn:hover,
+.filter:focus{
     color: #FFFFFF;
-    background-color: var(-main-color);
+    background-color: var(--main-color);
 }
 
+.port-cards-list{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.port-card{
+    background: #FFFFFF;
+    border: 1px solid #EEEEEE;
+}
+.port-card:not(:nth-child(3n)){
+    margin-right: 30px;
+}
+.port-card:nth-child(-n+6){
+    margin-bottom: 30px;
+}
 
 .port-card-label{
     font-weight: 400;
@@ -210,6 +308,8 @@ h2{
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: #212121;
+    margin-top: 20px;
+    margin-left: 24px;
 }
 
 .port-card-sublabel{
@@ -218,21 +318,30 @@ h2{
     line-height: 1.88;
     letter-spacing: 0.03em;
     color: #757575;
+    margin-top: 4px;
+    margin-bottom: 20px;
+    margin-left: 24px;
 }
 
 /* ===END=MAIN====== */
 
 /* =======FOOTER==== */
-footer{
+.footer{
     background-color: #2F303A;
+    padding: 60px 0;
 }
 
- footer .navigation-logo {
+ .footer .navigation-logo {
     color: #ffffff;
  }
  
- footer > .address{
+ .footer-list-item:not(:last-child){
+    margin-bottom: 9px;
+}
+
+ .footer .address{
     color: rgba(255, 255, 255, 0.6);
+    margin-bottom: 9px;
  }
 
 /* ===END=FOOTER==== */
