@@ -162,6 +162,10 @@ h1{
     margin-left: auto;
 }
 
+.paragraph{
+    margin-bottom: 94px;
+}
+
 .paragraphs-list{
     display: flex;
     gap: 30px;
@@ -183,7 +187,6 @@ h1{
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    padding-top: 94px;
     text-align: justify;
 }
 
