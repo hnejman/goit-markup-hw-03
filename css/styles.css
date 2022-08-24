@@ -72,10 +72,7 @@ body{
 .navigation-list{
     display: flex;
     align-items: center;
-}
-
-.navigation-list-item:not(:last-child){
-    margin-right: 46px;
+    gap: 46px;
 }
 
 .navigation-logo{
@@ -108,10 +105,7 @@ body{
 .contact-list{
     display: flex;
     margin-left: auto;
-}
-
-.contact-list-item:not(:last-child){
-    margin-right: 50px;
+    gap: 50px;
 }
 
 .contact-list{
@@ -168,8 +162,9 @@ h1{
     margin-left: auto;
 }
 
-.paragraphs .list{
+.paragraphs-list{
     display: flex;
+    gap: 30px;
 }
 
 .par-title{
@@ -183,25 +178,19 @@ h1{
 }
 
 .par{
+    color: var(-secoundary-color);
     font-weight: 400;
     font-size: 14px;
     line-height: 1.71;
     letter-spacing: 0.03em;
-    color: var(-secoundary-color);
     padding-top: 94px;
-}
-
-.par:not(:last-child){
-    margin-right: 30px;
+    text-align: justify;
 }
 
 .activities-list{
     display:flex;
     justify-content: center;
-}
-
-.acivities-list-item:not(:last-child){
-    margin-right: 30px;
+    gap: 30px;
 }
 
 .team{
@@ -211,6 +200,7 @@ h1{
 .team-list{
     display: flex;
     justify-content: center;
+    gap:30px;
 }
 
 .team-list-item{
@@ -226,10 +216,6 @@ h1{
     letter-spacing: 0.03em;
     padding-bottom: 30px;
     text-align: center;
-}
-
-.team-list-item:not(:last-child){
-    margin-right: 30px;
 }
 
 .team-name{
@@ -256,12 +242,9 @@ h2{
 
 .filter-list{
     display: flex;
+    gap: 8px;
     justify-content: center;
     margin-bottom: 50px;
-}
-
-.filter-list-item:not(:last-child){
-    margin-right: 8px;
 }
 
 .filter-btn{
@@ -286,20 +269,15 @@ h2{
 }
 
 .port-cards-list{
-    display: flex;
+    display: grid;
     justify-content: center;
-    flex-wrap: wrap;
+    grid-template-columns: auto auto auto;
+    gap: 30px;
 }
 
 .port-card{
     background: #FFFFFF;
     border: 1px solid #EEEEEE;
-}
-.port-card:not(:nth-child(3n)){
-    margin-right: 30px;
-}
-.port-card:nth-child(-n+6){
-    margin-bottom: 30px;
 }
 
 .port-card-label{
@@ -335,8 +313,10 @@ h2{
     color: #ffffff;
  }
  
- .footer-list-item:not(:last-child){
-    margin-bottom: 9px;
+ .footer-list{
+    display: grid;
+    grid-template-columns: auto;    
+    gap: 9px;
 }
 
  .footer .address{
