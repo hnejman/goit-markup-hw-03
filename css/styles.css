@@ -43,7 +43,7 @@ img{
 }
 
 body{
-    font-family: var(--main-font,--secoundary-font);
+    font-family: 'Roboto', sans-serif;
     color: #212121;
     padding: 0;
     margin: 0;
@@ -76,7 +76,7 @@ body{
 }
 
 .navigation-logo{
-    font-family: var(--secoundary-font);
+    font-family: 'Raleway', 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 26px;
     line-height: 1,192;
@@ -110,7 +110,6 @@ body{
 
 .contact-list{
     font-style: normal;
-    font-family: var(--main-font);
     font-weight: 500;
     font-size: 14px;
     line-height: 1,423;
